@@ -5,7 +5,7 @@
 // O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
 
 int main() {
-    // Nível Novato - Movimentação das Peças
+    // Nível Novato - Movimentação 
     // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
     int bispo = 1 , torre = 1 , rainha = 1;
     int cavalo = 1;
@@ -33,11 +33,12 @@ int main() {
     // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
     // Um loop pode representar a movimentação horizontal e outro vertical.
     printf("O cavalo se movimenta 2 vezes acima e uma a direita.\n");
-    while (cavalo--){
-        for(int i = 0; i <= 2; i++){
-            printf("cima\n");
+    while (cavalo == 1){
+        for(int i = 1; i <= 2; i++){
+            printf("\ncima\n");
         }
-        printf("direita\n");
+        printf("\nDireita\n");
+        cavalo++;
     }
     // Nível Mestre - Funções Recursivas e Loops Aninhados
     // Sugestão: Substitua as movimentações das peças por funções recursivas.
